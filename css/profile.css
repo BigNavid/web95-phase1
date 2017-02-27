@@ -1,86 +1,119 @@
-* {
-  padding: 0px;
-  margin: 0px; }
-
-body {
-  padding: 0px;
-  height: 100%;
-  width: 100%; }
-  body header {
-    padding: 0px;
-    margin: 0px;
-    height: 300px;
+body header {
+  height: 300px;
+  overflow: hidden; }
+  body header div.cover {
+    background-image: url("../img/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100%;
-    overflow: hidden; }
-    body header nav {
-      height: 40px;
-      width: 100%;
-      background-color: #283E4A;
-      position: fixed;
-      z-index: 4; }
-    body header div.nav-clear {
-      height: 20px;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.4);
-      position: fixed;
-      margin-top: 40px;
-      z-index: 4; }
-    body header div.cover {
-      background-image: url("../img/cover.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      background-color: aliceblue;
-      width: 100%;
-      height: 100%; }
-  body div.main-content {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: aqua; }
-    body div.main-content:after {
-      content: "";
-      display: table;
-      clear: both; }
-    body div.main-content div.profile-wrapper {
-      display: inline-block;
-      float: left;
-      width: 70%;
-      background-color: burlywood;
-      position: relative;
-      top: -100px; }
-      body div.main-content div.profile-wrapper div.box-info {
-        background-color: brown;
-        width: 95%;
-        height: 300px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5px; }
+    height: 100%; }
+body div.main-content {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto; }
+  body div.main-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+  body div.main-content div.profile-wrapper {
+    display: inline-block;
+    float: left;
+    width: 70%;
+    margin-top: -100px; }
+    body div.main-content div.profile-wrapper div.box-info {
+      background-color: white;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2);
+      font-family: "IRANSans-web"; }
+    body div.main-content div.profile-wrapper div.box-info-title {
+      color: black;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: right;
+      margin-right: 1em; }
+    body div.main-content div.profile-wrapper div.box-info-item {
+      margin-top: 0.5em;
+      margin-right: 2.5em;
+      text-align: right; }
+      body div.main-content div.profile-wrapper div.box-info-item img {
+        float: right;
+        height: 64px;
+        width: 64px;
+        margin-left: 1em;
+        box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, 0.15), 0 1.5px 3px 0 rgba(0, 0, 0, 0.15); }
+      body div.main-content div.profile-wrapper div.box-info-item div.box-info-item-title {
+        margin-right: 64px;
+        font-weight: bold; }
+      body div.main-content div.profile-wrapper div.box-info-item div.box-info-item-main {
+        font-size: 0.9em;
+        margin-right: 64px;
+        margin-top: 0.2em; }
+        body div.main-content div.profile-wrapper div.box-info-item div.box-info-item-main p.box-info-item-main-description {
+          font-size: 0.7em; }
+    body div.main-content div.profile-wrapper div.box-info-item-clear {
+      border-bottom: 2px solid #E6E9EC;
+      margin-top: 1em;
+      margin-bottom: 1em; }
+    body div.main-content div.profile-wrapper div.box-info-clear {
+      height: 2em; }
+    body div.main-content div.profile-wrapper div.profile-details {
+      direction: rtl; }
       body div.main-content div.profile-wrapper div.profile-details div.profile-picture {
         overflow: hidden;
         border-radius: 50%;
         height: 150px;
         width: 150px;
-        margin: 0 auto;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
+        margin-left: auto;
+        margin-right: auto;
         background-color: rgba(243, 246, 248, 0.94);
-        border: 4px solid #fff;
+        border: 4px solid #ffffff;
         box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, 0.15), 0 1.5px 3px 0 rgba(0, 0, 0, 0.15); }
         body div.main-content div.profile-wrapper div.profile-details div.profile-picture img {
           height: 100%;
           width: 100%; }
-    body div.main-content div.sidebar-right {
-      display: inline-block;
-      width: 29.5%;
-      height: 100px;
-      background-color: azure;
-      float: right; }
-  body footer {
-    width: 100%;
+      body div.main-content div.profile-wrapper div.profile-details div.resume-link {
+        background-color: #0084bf;
+        float: left;
+        margin-top: -5.5em;
+        margin-left: 1em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        border-radius: 2px; }
+        body div.main-content div.profile-wrapper div.profile-details div.resume-link a {
+          text-decoration: none;
+          color: #fff; }
+      body div.main-content div.profile-wrapper div.profile-details div.profile-details-name {
+        text-align: center;
+        color: black;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: -60px; }
+      body div.main-content div.profile-wrapper div.profile-details div.profile-details-bio {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        text-align: right;
+        color: black;
+        font-size: 1em; }
+  body div.main-content div.sidebar-right {
+    display: inline-block;
+    width: 29.5%;
     height: 100px;
-    background-color: darkmagenta; }
+    background-color: azure;
+    float: right;
+    margin-right: 0.2%; }
 
 /*# sourceMappingURL=profile.css.map */

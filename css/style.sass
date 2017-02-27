@@ -1,0 +1,68 @@
+$nav-height : 50px
+$nav-btn-text-color : #ffffff
+
+=margin-center
+  margin-left: auto
+  margin-right: auto
+
+@import "font-awesome.min.css"
+
+@font-face
+  font-family: 'IRANSans-web'
+  src: url("../fonts/IRANSansWeb_Bold.eot")
+  src: url("../fonts/IRANSansWeb_Medium.eot?#iefix") format("eot"), url("../fonts/IRANSansWeb_Medium.woff2") format("woff2"), url("../fonts/IRANSansWeb_Medium.woff") format("woff"), url("../fonts/IRANSansWeb_Medium.ttf") format("ttf")
+  font-weight: bold
+
+@font-face
+  font-family: 'IRANSans-web'
+  src: url("../fonts/IRANSansWeb_Light.eot")
+  src: url("../fonts/IRANSansWeb_Light.eot?#iefix") format("eot"), url("../fonts/IRANSansWeb_Light.woff2") format("woff2"), url("../fonts/IRANSansWeb_Light.woff") format("woff"), url("../fonts/IRANSansWeb_Light.ttf") format("ttf")
+  font-weight: normal
+
+*
+  padding: 0px
+  margin: 0px
+body
+  padding: 0px
+  height: 100%
+  width: 100%
+  header
+    padding: 0px
+    margin: 0px
+    width: 100%
+    nav
+      height: $nav-height
+      width: 100%
+      background-color: #283E4A
+      position: fixed
+      z-index: 2
+      div.nav-container
+        width: 70%
+        +margin-center
+        span
+          margin-top: 5px
+          float: right
+          margin-right: 5px
+          margin-left: 5px
+          text-align: center
+          color: $nav-btn-text-color
+          a
+            font-family: "IRANSans-web"
+            text-decoration: none
+            color: $nav-btn-text-color
+            font-size: small
+            font-weight: bold
+          &:hover
+            opacity: 0.5
+            transition: 0.3s
+    div.nav-clear
+      height: 20px
+      width: 100%
+      background-color: rgba(0, 0, 0, 0.4)
+      position: fixed
+      margin-top: $nav-height
+      z-index: 2
+  footer
+    width: 100%
+    height: 100px
+    background-color: darkmagenta
