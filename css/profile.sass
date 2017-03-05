@@ -6,17 +6,6 @@ $slider-main-image-height: 320px
 @import "functions"
 
 body
-  background-color: #F5F5F5
-  header
-    height: 300px
-    overflow: hidden
-    div.cover
-      background-image: url("../img/cover.svg")
-      background-repeat: no-repeat
-      background-position: center
-      +background-size(center)
-      width: 100%
-      height: 100%
   div.main-content
     width: 70%
     margin-left: auto
@@ -153,8 +142,6 @@ body
       display: inline-block
       width: 29.5%
       padding-top: 100px
-      //height: 300px
-      //background-color: azure
       float: right
       margin-right: 0.2%
       margin-top: 1%
@@ -162,3 +149,16 @@ body
         background-color: darkolivegreen
         width: 100%
         height: 100px
+      div.social-links
+        width: 100%
+        margin-top: 20px
+        text-align: center
+        a
+          text-decoration: none
+          color: #000
+      div.sidebar-right-title
+        text-align: right
+        font-weight: bold
+        border-bottom: 2px solid #E6E9EC
+        padding-bottom: 5px
+        margin-bottom: 15px

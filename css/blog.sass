@@ -1,0 +1,31 @@
+@import "functions"
+
+body
+  div.main-content
+    width: 80%
+    margin-top: -100px
+    margin-left: auto
+    margin-right: auto
+    padding-top: 50px
+    background-color: white
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 2px 3px rgba(0, 0, 0, .2)
+    div.category-selection
+      background-color: #efefef
+      width: 40%
+      height: 50px
+      +margin-center
+      +border-radius(6px)
+      text-align: center
+      padding-top: 20px
+      div.category
+        display: inline
+        padding-left: 10px
+        padding-right: 10px
+        &:hover
+          background-color: azure
+    div.post-wrapper
+      background-color: #0084bf
+      +margin-center
+      margin-top: 50px
+      width: 90%
+      height: 500px

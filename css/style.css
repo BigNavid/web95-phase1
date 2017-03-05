@@ -14,6 +14,7 @@
   margin: 0px; }
 
 body {
+  background-color: #F5F5F5;
   font-family: "IRANSans-web";
   padding: 0px;
   height: 100%;
@@ -21,7 +22,9 @@ body {
   body header {
     padding: 0px;
     margin: 0px;
-    width: 100%; }
+    width: 100%;
+    height: 300px;
+    overflow: hidden; }
     body header nav {
       height: 50px;
       width: 100%;
@@ -55,6 +58,16 @@ body {
       position: fixed;
       margin-top: 50px;
       z-index: 2; }
+    body header div.cover {
+      background-image: url("../img/cover.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 100%;
+      height: 100%; }
   body footer {
     direction: rtl;
     width: 100%;
@@ -69,5 +82,8 @@ body {
       margin-right: auto; }
       body footer div.footer-content div.copy-right {
         display: inline-block; }
+        body footer div.footer-content div.copy-right a {
+          text-decoration: none;
+          color: #000; }
 
 /*# sourceMappingURL=style.css.map */
