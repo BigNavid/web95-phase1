@@ -1,0 +1,75 @@
+body div.main-content {
+  width: 80%;
+  margin-top: -100px;
+  margin-left: auto;
+  margin-right: auto; }
+  body div.main-content div.post-container {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2); }
+    body div.main-content div.post-container:after {
+      content: "";
+      display: table;
+      clear: both; }
+    body div.main-content div.post-container div.post-title {
+      direction: rtl;
+      margin-right: 1.5rem;
+      margin-left: 1.5rem;
+      font-size: 2rem;
+      font-weight: bold;
+      border-bottom: 2px solid #F5F5F5; }
+    body div.main-content div.post-container div.post-details {
+      direction: rtl;
+      margin-top: 1rem;
+      line-height: 60px; }
+      body div.main-content div.post-container div.post-details div.author-pic {
+        margin-right: 2rem;
+        float: right;
+        width: 60px; }
+        body div.main-content div.post-container div.post-details div.author-pic img {
+          width: 100%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          border-radius: 50%; }
+      body div.main-content div.post-container div.post-details div.author-name {
+        display: inline-block;
+        margin-right: 0.5rem;
+        padding-left: 0.5rem;
+        border-left: 1px solid #F5F5F5; }
+      body div.main-content div.post-container div.post-details div.post-category {
+        display: inline-block;
+        margin-right: 0.5rem;
+        padding-left: 0.5rem;
+        border-left: 1px solid #F5F5F5; }
+      body div.main-content div.post-container div.post-details div.post-time {
+        display: inline-block;
+        margin-right: 0.5rem;
+        padding-left: 0.5rem; }
+    body div.main-content div.post-container div.post-thumb {
+      margin-left: 1rem;
+      width: 20%;
+      float: left; }
+      body div.main-content div.post-container div.post-thumb img {
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        width: 100%; }
+        body div.main-content div.post-container div.post-thumb img:hover {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); }
+    body div.main-content div.post-container div.post-content {
+      display: inline-block;
+      width: 75%;
+      direction: rtl; }
+    body div.main-content div.post-container div.social-links {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center; }
+      body div.main-content div.post-container div.social-links a {
+        color: black;
+        text-decoration: none; }
+
+/*# sourceMappingURL=post.css.map */

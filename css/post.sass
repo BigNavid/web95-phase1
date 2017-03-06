@@ -1,0 +1,73 @@
+$profile-pic-size: 60px
+
+@import "functions"
+
+body
+  div.main-content
+    width: 80%
+    margin-top: -100px
+    margin-left: auto
+    margin-right: auto
+    div.post-container
+      position: relative
+      padding-top: 50px
+      padding-bottom: 50px
+      background-color: white
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 2px 3px rgba(0, 0, 0, .2)
+      &:after
+        content: ""
+        display: table
+        clear: both
+      div.post-title
+        direction: rtl
+        margin-right: 1.5rem
+        margin-left: 1.5rem
+        font-size: 2rem
+        font-weight: bold
+        border-bottom: 2px solid #F5F5F5
+      div.post-details
+        direction: rtl
+        margin-top: 1rem
+        line-height: $profile-pic-size
+        div.author-pic
+          margin-right: 2rem
+          float: right
+          width: $profile-pic-size
+          img
+            width: 100%
+            +border-radius(50%)
+        div.author-name
+          display: inline-block
+          margin-right: 0.5rem
+          padding-left: 0.5rem
+          border-left: 1px solid #F5F5F5
+        div.post-category
+          display: inline-block
+          margin-right: 0.5rem
+          padding-left: 0.5rem
+          border-left: 1px solid #F5F5F5
+        div.post-time
+          display: inline-block
+          margin-right: 0.5rem
+          padding-left: 0.5rem
+      div.post-thumb
+        margin-left: 1rem
+        width: 20%
+        float: left
+        img
+          +border-radius(6px)
+          width: 100%
+          &:hover
+            +grayscale(100%)
+      div.post-content
+        display: inline-block
+        width: 75%
+        direction: rtl
+      div.social-links
+        position: absolute
+        bottom: 0
+        width: 100%
+        text-align: center
+        a
+          color: black
+          text-decoration: none
