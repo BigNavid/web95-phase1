@@ -1,180 +1,202 @@
-body {
-  background-color: #F5F5F5; }
-  body header {
-    height: 300px;
-    overflow: hidden; }
-    body header div.cover {
-      background-image: url("../img/cover.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      width: 100%;
-      height: 100%; }
-  body div.main-content {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto; }
-    body div.main-content:after {
-      content: "";
-      display: table;
-      clear: both; }
-    body div.main-content div.profile-wrapper {
-      display: inline-block;
-      float: left;
-      width: 70%;
-      margin-top: -100px; }
-      body div.main-content div.profile-wrapper div.box-info {
-        background-color: white;
-        width: 95%;
+body div.main-content {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto; }
+  body div.main-content:after {
+    content: "";
+    display: table;
+    clear: both; }
+  body div.main-content div.profile-wrapper {
+    display: inline-block;
+    float: left;
+    width: 80%;
+    margin-top: -100px; }
+    @media screen and (max-width: 720px) {
+      body div.main-content div.profile-wrapper {
+        width: 100%; } }
+    body div.main-content div.profile-wrapper div.box-info {
+      background-color: white;
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 15px;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2); }
+    body div.main-content div.profile-wrapper div.box-info-title {
+      color: black;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: right;
+      margin-right: 1em;
+      padding-top: 0.5em; }
+    body div.main-content div.profile-wrapper div.box-info-item {
+      margin-top: 0.5em;
+      margin-right: 2.5em;
+      text-align: right; }
+      body div.main-content div.profile-wrapper div.box-info-item img {
+        float: right;
+        height: 64px;
+        width: 64px;
+        margin-left: 1em;
+        box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, 0.15), 0 1.5px 3px 0 rgba(0, 0, 0, 0.15); }
+      body div.main-content div.profile-wrapper div.box-info-item div.box-info-item-title {
+        margin-right: 64px;
+        font-weight: bold; }
+      body div.main-content div.profile-wrapper div.box-info-item div.box-info-item-main {
+        font-size: 0.9em;
+        margin-right: 64px;
+        margin-top: 0.2em; }
+        body div.main-content div.profile-wrapper div.box-info-item div.box-info-item-main p.box-info-item-main-description {
+          font-size: 0.7em;
+          margin-right: 1.5em; }
+    body div.main-content div.profile-wrapper div.box-info-item-clear {
+      border-bottom: 2px solid #E6E9EC;
+      margin-top: 1em;
+      margin-bottom: 1em; }
+    body div.main-content div.profile-wrapper div.box-info-clear {
+      height: 2em; }
+    body div.main-content div.profile-wrapper div.profile-details {
+      direction: rtl; }
+      body div.main-content div.profile-wrapper div.profile-details div.profile-picture {
+        overflow: hidden;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 15px;
-        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.2); }
-      body div.main-content div.profile-wrapper div.box-info-title {
+        background-color: rgba(243, 246, 248, 0.94);
+        border: 4px solid #ffffff;
+        box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, 0.15), 0 1.5px 3px 0 rgba(0, 0, 0, 0.15); }
+        body div.main-content div.profile-wrapper div.profile-details div.profile-picture img {
+          height: 100%;
+          width: 100%; }
+      body div.main-content div.profile-wrapper div.profile-details div.profile-details-name {
+        text-align: center;
         color: black;
         font-size: 2em;
         font-weight: bold;
-        text-align: right;
-        margin-right: 1em;
-        padding-top: 0.5em; }
-      body div.main-content div.profile-wrapper div.box-info-item {
-        margin-top: 0.5em;
-        margin-right: 2.5em;
-        text-align: right; }
-        body div.main-content div.profile-wrapper div.box-info-item img {
-          float: right;
-          height: 64px;
-          width: 64px;
-          margin-left: 1em;
-          box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, 0.15), 0 1.5px 3px 0 rgba(0, 0, 0, 0.15); }
-        body div.main-content div.profile-wrapper div.box-info-item div.box-info-item-title {
-          margin-right: 64px;
-          font-weight: bold; }
-        body div.main-content div.profile-wrapper div.box-info-item div.box-info-item-main {
-          font-size: 0.9em;
-          margin-right: 64px;
-          margin-top: 0.2em; }
-          body div.main-content div.profile-wrapper div.box-info-item div.box-info-item-main p.box-info-item-main-description {
-            font-size: 0.7em;
-            margin-right: 1.5em; }
-      body div.main-content div.profile-wrapper div.box-info-item-clear {
-        border-bottom: 2px solid #E6E9EC;
+        margin-top: -60px; }
+      body div.main-content div.profile-wrapper div.profile-details div.profile-details-bio {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
         margin-top: 1em;
-        margin-bottom: 1em; }
-      body div.main-content div.profile-wrapper div.box-info-clear {
-        height: 2em; }
-      body div.main-content div.profile-wrapper div.profile-details {
-        direction: rtl; }
-        body div.main-content div.profile-wrapper div.profile-details div.profile-picture {
-          overflow: hidden;
-          -moz-border-radius: 50%;
-          -webkit-border-radius: 50%;
-          border-radius: 50%;
-          height: 150px;
-          width: 150px;
-          -ms-transform: translateY(-50%);
-          -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-          margin-left: auto;
-          margin-right: auto;
-          background-color: rgba(243, 246, 248, 0.94);
-          border: 4px solid #ffffff;
-          box-shadow: inset 0 1.5px 3px 0 rgba(0, 0, 0, 0.15), 0 1.5px 3px 0 rgba(0, 0, 0, 0.15); }
-          body div.main-content div.profile-wrapper div.profile-details div.profile-picture img {
-            height: 100%;
-            width: 100%; }
-        body div.main-content div.profile-wrapper div.profile-details div.profile-details-name {
-          text-align: center;
-          color: black;
-          font-size: 2em;
-          font-weight: bold;
-          margin-top: -60px; }
-        body div.main-content div.profile-wrapper div.profile-details div.profile-details-bio {
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 1em;
-          text-align: right;
-          color: black;
-          font-size: 1em; }
-      body div.main-content div.profile-wrapper div.resume-summary-work {
-        direction: rtl; }
-        body div.main-content div.profile-wrapper div.resume-summary-work div.resume-link {
-          background-color: #0084bf;
-          float: left;
-          margin-top: -1.5em;
-          margin-left: 1em;
-          padding-right: 0.5em;
-          padding-left: 0.5em;
-          padding-top: 0.25em;
-          padding-bottom: 0.25em;
-          -moz-border-radius: 2px;
-          -webkit-border-radius: 2px;
-          border-radius: 2px; }
-          body div.main-content div.profile-wrapper div.resume-summary-work div.resume-link a {
-            text-decoration: none;
-            color: #fff; }
-      body div.main-content div.profile-wrapper div.selected-images {
-        overflow: hidden; }
-        body div.main-content div.profile-wrapper div.selected-images div.slider {
-          width: 640px;
-          position: relative;
-          padding-top: 320px;
-          margin: 100px auto;
-          box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75); }
-        body div.main-content div.profile-wrapper div.selected-images div.slider > img {
-          width: 640px;
-          height: 320px;
-          position: absolute;
-          left: 0;
-          top: 0;
-          transition: all 0.5s; }
-        body div.main-content div.profile-wrapper div.selected-images .slider input[name='slide_switch'] {
-          display: none; }
-        body div.main-content div.profile-wrapper div.selected-images .slider label {
-          margin: 18px 0 0 18px;
-          border: 3px solid #999;
-          float: left;
-          cursor: pointer;
-          transition: all 0.5s;
-          opacity: 0.6; }
-        body div.main-content div.profile-wrapper div.selected-images .slider label img {
-          display: block; }
-        body div.main-content div.profile-wrapper div.selected-images .slider input[name='slide_switch']:checked + label {
-          border-color: #666;
-          opacity: 1; }
-        body div.main-content div.profile-wrapper div.selected-images .slider input[name='slide_switch'] ~ img {
-          opacity: 0;
-          transform: scale(1.1); }
-        body div.main-content div.profile-wrapper div.selected-images .slider input[name='slide_switch']:checked + label + img {
-          opacity: 1;
-          transform: scale(1); }
-    body div.main-content div.sidebar-right {
-      display: inline-block;
-      width: 29.5%;
-      padding-top: 100px;
-      float: right;
-      margin-right: 0.2%;
-      margin-top: 1%; }
-      body div.main-content div.sidebar-right div.related-links {
-        background-color: darkolivegreen;
-        width: 100%;
-        height: 100px; }
-      body div.main-content div.sidebar-right div.social-links {
-        width: 100%;
-        margin-top: 20px;
-        text-align: center; }
-        body div.main-content div.sidebar-right div.social-links a {
-          text-decoration: none;
-          color: #000; }
-      body div.main-content div.sidebar-right div.sidebar-right-title {
         text-align: right;
-        font-weight: bold;
-        border-bottom: 2px solid #E6E9EC;
-        padding-bottom: 5px;
-        margin-bottom: 15px; }
+        color: black;
+        font-size: 1em; }
+    body div.main-content div.profile-wrapper div.resume-summary-work {
+      direction: rtl; }
+      body div.main-content div.profile-wrapper div.resume-summary-work div.resume-link {
+        background-color: #0084bf;
+        float: left;
+        margin-top: -1.5em;
+        margin-left: 1em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
+        body div.main-content div.profile-wrapper div.resume-summary-work div.resume-link a {
+          text-decoration: none;
+          color: #fff; }
+    body div.main-content div.profile-wrapper div.selected-images {
+      overflow: hidden; }
+      body div.main-content div.profile-wrapper div.selected-images div.slider {
+        width: 640px;
+        position: relative;
+        padding-top: 320px;
+        margin: 100px auto;
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75); }
+        @media screen and (max-width: 1360px) {
+          body div.main-content div.profile-wrapper div.selected-images div.slider {
+            width: 320px;
+            padding-top: 160px; } }
+      body div.main-content div.profile-wrapper div.selected-images div.slider > img {
+        width: 640px;
+        height: 320px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.5s; }
+        @media screen and (max-width: 1360px) {
+          body div.main-content div.profile-wrapper div.selected-images div.slider > img {
+            width: 320px;
+            height: 160px; } }
+      body div.main-content div.profile-wrapper div.selected-images div.slider input[name='slide_switch'] {
+        display: none; }
+      body div.main-content div.profile-wrapper div.selected-images div.slider label {
+        margin: 18px 0 0 18px;
+        border: 3px solid #999;
+        float: left;
+        cursor: pointer;
+        transition: all 0.5s;
+        opacity: 0.6; }
+        @media screen and (max-width: 1360px) {
+          body div.main-content div.profile-wrapper div.selected-images div.slider label {
+            margin: 2px 0 0 2px; } }
+      body div.main-content div.profile-wrapper div.selected-images div.slider label img {
+        display: block;
+        width: 100px; }
+        @media screen and (max-width: 1360px) {
+          body div.main-content div.profile-wrapper div.selected-images div.slider label img {
+            width: 55px; } }
+      body div.main-content div.profile-wrapper div.selected-images div.slider input[name='slide_switch']:checked + label {
+        border-color: #666;
+        opacity: 1; }
+      body div.main-content div.profile-wrapper div.selected-images div.slider input[name='slide_switch'] ~ img {
+        opacity: 0;
+        transform: scale(1.1); }
+      body div.main-content div.profile-wrapper div.selected-images div.slider input[name='slide_switch']:checked + label + img {
+        opacity: 1;
+        transform: scale(1); }
+    body div.main-content div.profile-wrapper div.contact-info div.contact-details {
+      direction: rtl;
+      margin-right: 2.5em; }
+      body div.main-content div.profile-wrapper div.contact-info div.contact-details a {
+        text-decoration: none;
+        color: #000; }
+    body div.main-content div.profile-wrapper div.contact-info div.mobile-social-icons {
+      display: none;
+      margin-top: 20px;
+      text-align: center; }
+      body div.main-content div.profile-wrapper div.contact-info div.mobile-social-icons a {
+        text-decoration: none;
+        color: #000; }
+      @media screen and (max-width: 720px) {
+        body div.main-content div.profile-wrapper div.contact-info div.mobile-social-icons {
+          display: block; } }
+  body div.main-content div.sidebar-right {
+    display: inline-block;
+    width: 19.5%;
+    padding-top: 100px;
+    float: right;
+    margin-right: 0.2%;
+    margin-top: 1%; }
+    @media screen and (max-width: 720px) {
+      body div.main-content div.sidebar-right {
+        display: none; } }
+    body div.main-content div.sidebar-right div.related-links {
+      background-color: darkolivegreen;
+      width: 100%;
+      height: 100px; }
+    body div.main-content div.sidebar-right div.social-links {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center; }
+      body div.main-content div.sidebar-right div.social-links a {
+        text-decoration: none;
+        color: #000; }
+    body div.main-content div.sidebar-right div.sidebar-right-title {
+      text-align: right;
+      font-weight: bold;
+      border-bottom: 2px solid #E6E9EC;
+      padding-bottom: 5px;
+      margin-bottom: 15px; }
 
 /*# sourceMappingURL=profile.css.map */

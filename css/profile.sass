@@ -2,6 +2,8 @@ $profile-pic-size: 150px
 $box-info-item-img-size: 64px
 $slider-main-image-width: 640px
 $slider-main-image-height: 320px
+$mobile-slider-main-image-width: 320px
+$mobile-slider-main-image-height: 160px
 
 @import "functions"
 
@@ -17,8 +19,10 @@ body
     div.profile-wrapper
       display: inline-block
       float: left
-      width: 70%
+      width: 80%
       margin-top: -100px
+      @media screen and (max-width: 720px)
+        width: 100%
       div.box-info
         background-color: white
         width: 95%
@@ -110,6 +114,9 @@ body
           padding-top: $slider-main-image-height
           margin: 100px auto
           box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75)
+          @media screen and (max-width: 1360px)
+            width: $mobile-slider-main-image-width
+            padding-top: $mobile-slider-main-image-height
         div.slider>img
           width: $slider-main-image-width
           height: $slider-main-image-height
@@ -117,34 +124,59 @@ body
           left: 0
           top: 0
           transition: all 0.5s
-        .slider input[name='slide_switch']
+          @media screen and (max-width: 1360px)
+            width: $mobile-slider-main-image-width
+            height: $mobile-slider-main-image-height
+        div.slider input[name='slide_switch']
           display: none
-        .slider label
+        div.slider label
           margin: 18px 0 0 18px
           border: 3px solid #999
           float: left
           cursor: pointer
           transition: all 0.5s
           opacity: 0.6
-        .slider label img
+          @media screen and (max-width: 1360px)
+            margin: 2px 0 0 2px
+        div.slider label img
           display: block
-        .slider input[name='slide_switch']:checked+label
+          width: 100px
+          @media screen and (max-width: 1360px)
+            width: 55px
+        div.slider input[name='slide_switch']:checked+label
           border-color: #666
           opacity: 1
-        .slider input[name='slide_switch'] ~ img
+        div.slider input[name='slide_switch'] ~ img
           opacity: 0
           transform: scale(1.1)
-        .slider input[name='slide_switch']:checked+label+img
+        div.slider input[name='slide_switch']:checked+label+img
           opacity: 1
           transform: scale(1)
-
+      div.contact-info
+        div.contact-details
+          direction: rtl
+          margin-right: 2.5em
+          a
+            text-decoration: none
+            color: #000
+        div.mobile-social-icons
+          display: none
+          margin-top: 20px
+          text-align: center
+          a
+            text-decoration: none
+            color: #000
+          @media screen and (max-width: 720px)
+            display: block
     div.sidebar-right
       display: inline-block
-      width: 29.5%
+      width: 19.5%
       padding-top: 100px
       float: right
       margin-right: 0.2%
       margin-top: 1%
+      @media screen and (max-width: 720px)
+        display: none
       div.related-links
         background-color: darkolivegreen
         width: 100%
