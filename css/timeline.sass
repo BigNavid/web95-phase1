@@ -1,0 +1,112 @@
+@import "functions"
+
+body
+  div.main-content
+    width: 80%
+    margin-top: -100px
+    margin-left: auto
+    margin-right: auto
+    position: relative
+    padding-top: 50px
+    padding-bottom: 50px
+    background-color: white
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 2px 3px rgba(0, 0, 0, .2)
+    div.time-selection
+      direction: rtl
+      text-align: center
+      background-color: #efefef
+      width: 40%
+      +margin-center
+      +border-radius(6px)
+      margin-bottom: 2em
+      div.time
+        display: inline-block
+        line-height: 50px
+        padding: 10px
+        &:hover
+          background-color: rgba(0, 0, 0, .1)
+          +border-radius(6px)
+    ul.tl-items
+      margin-left: 2%
+      margin-right: 2%
+      list-style: none
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        width: 10px
+        background: #afdcf8
+        right: 20%
+        margin-left: -10px
+        @media screen and (max-width: 720px)
+          display: none
+      li
+        div.time
+          display: block
+          margin-left: 81%
+          position: absolute
+          @media screen and (max-width: 720px)
+            position: static
+            margin-left: 0
+          span
+            direction: rtl
+            display: block
+            text-align: left
+            @media screen and (max-width: 720px)
+              text-align: right
+        div.tl-item
+          direction: rtl
+          text-align: right
+          margin: 5px 25% 1.5% 0
+          background: #3594cb
+          color: #fff
+          padding: 1em
+          font-size: 1.2em
+          font-weight: 300
+          line-height: 1.4
+          position: relative
+          border-radius: 5px
+          @media screen and (max-width: 720px)
+            margin-right: 0
+          &:after
+            left: 100%
+            border: 10px solid transparent
+            border-left-color: #3594cb
+            content: " "
+            height: 0
+            width: 0
+            position: absolute
+            pointer-events: none
+            top: 10px
+            @media screen and (max-width: 720px)
+              left: auto
+              right: 20px
+              border-left-color: transparent
+              border-bottom-color: #3594cb
+              top: -20px
+          img.profile-pic
+            width: 100px
+            float: right
+            margin-right: 10px
+            margin-left: 10px
+            margin-bottom: 10px
+            +border-radius(50%)
+            @media screen and (max-width: 720px)
+              display: none
+          div.tl-image
+            display: block
+            +margin-center
+            margin-top: 10px
+            overflow: hidden
+            img
+              width: 100%
+              +border-radius(6px)
+              +grayscale(1)
+              &:hover
+                +grayscale(0)
+          div.tl-item-footer
+            direction: rtl
+            text-align: left
+            padding-top: 1em

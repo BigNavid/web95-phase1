@@ -145,12 +145,12 @@ body
             width: 55px
         div.slider input[name='slide_switch']:checked+label
           border-color: #666
-          opacity: 1
+          +opacity(1)
         div.slider input[name='slide_switch'] ~ img
-          opacity: 0
+          +opacity(0)
           transform: scale(1.1)
         div.slider input[name='slide_switch']:checked+label+img
-          opacity: 1
+          +opacity(1)
           transform: scale(1)
       div.contact-info
         div.contact-details
